@@ -1,0 +1,6 @@
+
+RUN yum -y install kde-l10n-Chinese
+RUN yum -y install glibc-common
+RUN localedef -c -f UTF-8 -i zh_CN zh_CN.utf8
+
+ENV LC_ALL "zh_CN.UTF-8"
